@@ -10,13 +10,15 @@
 #######
 # TASK 1: Import pandas and numpy
 ######
-
+import pandas as pd
+import numpy as np
 
 
 #######
 # TASK 2: Set Numpy's random number generator seed to 101
 ######
 
+np.random.seed(101)
 
 
 #######
@@ -24,6 +26,9 @@
 #         random integers from 1-100. (Keep in mind that the upper
 #         limit may be exclusive.)
 ######
+mat1 = np.random.randint(0, 101, (100, 5))
+mat2 = np.random.randint(0, 101, [100, 5])
+
 
 
 
