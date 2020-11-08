@@ -56,5 +56,5 @@ df.columns = ['f1', 'f2', 'f3', 'f4', 'label']
 #         it in to pd.DataFrame(), check out the data= and index= parameters
 #         for that call.)
 
-data = np.random.randint(0, 101, [50, 4])
+data = np.random.randint(0, 101, (50, 4))
 df2 = pd.DataFrame(data=data, columns=['A', 'B', 'C', 'D'])
