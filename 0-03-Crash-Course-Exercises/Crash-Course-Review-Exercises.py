@@ -30,15 +30,13 @@ mat1 = np.random.randint(0, 101, (100, 5))
 mat2 = np.random.randint(0, 101, [100, 5])
 
 
-
-
 #######
 # TASK 4: Now use pd.DataFrame() to read in this numpy array as a dataframe.
 #         Simple pass in the numpy array into that function to get back a
 #         dataframe. Pandas will auto label the columns to 0-4
 ######
 
-
+df = pd.DataFrame(data=mat1)
 
 #######
 # TASK 5: Using your previously created DataFrame, use [df.columns = [...]]
@@ -46,7 +44,7 @@ mat2 = np.random.randint(0, 101, [100, 5])
 #         to rename the pandas columns to be ['f1','f2','f3','f4','label'].
 ######
 
-
+df.columns = ['f1', 'f2', 'f3', 'f4', 'label']
 
 #######
 # TASK 6: Alright, all the other tasks were hopefully straightforward.
@@ -57,3 +55,6 @@ mat2 = np.random.randint(0, 101, [100, 5])
 #         between 0 and 100. (Hint: Use numpy to create the numbers, then pass
 #         it in to pd.DataFrame(), check out the data= and index= parameters
 #         for that call.)
+
+data = np.random.randint(0, 101, [50, 4])
+df2 = pd.DataFrame(data=data, columns=['A', 'B', 'C', 'D'])
